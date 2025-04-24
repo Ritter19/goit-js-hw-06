@@ -5,8 +5,6 @@ console.log(`Number of categories: ${categories.length}`);
 console.log(categories[0].firstElementChild);
 
 for (let category of categories) {
-  console.log(`Category: ${categories.firstElementChild.innerText}`);
-  console.log(
-    `Elements: ${categories.firstElementChild.nextElementSibling.children.length}`
-  );
+  console.log(`Category: ${category.firstElementChild.innerText}`);
+  console.log(`Elements: ${category.lastElementChild.children.length}`);
 }

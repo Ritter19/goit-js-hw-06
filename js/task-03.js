@@ -24,6 +24,17 @@ for (let image of images) {
 ul.style.display = "flex";
 ul.style.flexWrap = "wrap";
 ul.style.justifyContent = "center";
-ul.style.gap = "20px";
+ul.style.gap = "30px";
 ul.style.listStyle = "none";
-ul.style.padding = "0";
+ul.style.padding = "20px";
+ul.style.background = "#ADD8E6";
+
+const allImages = ul.querySelectorAll("img");
+allImages.forEach((img) => {
+  img.style.width = "600px";
+  img.style.height = "400px";
+  img.style.objectFit = "cover";
+  img.style.border = "4px solid #222";
+  img.style.borderRadius = "12px";
+  img.style.boxShadow = "4px 8px 20px rgba(0, 0, 0, 0.3)";
+});
